@@ -1,7 +1,8 @@
 import React from "react";
 import "./styles.css";
-import logoImage from "../../assets/logo.png";
+import logoImage from "../../assets/logo.svg";
 import { Link } from "react-router-dom";
+import { FiArrowLeft } from "react-icons/fi";
 
 export default function Register() {
   return (
@@ -12,6 +13,7 @@ export default function Register() {
           <h1>Cadastro</h1>
           <p>Faça seu Cadastro!</p>
           <Link className="link" to="/">
+            <FiArrowLeft size={24} color="#66fcf1" />
             Voltar para Login
           </Link>
         </section>

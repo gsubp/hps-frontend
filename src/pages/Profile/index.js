@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles.css";
-import logoImage from "../../assets/logo.png";
+import logoImage from "../../assets/logo.svg";
 import { Link } from "react-router-dom";
 import { FiPower, FiTrash2 } from "react-icons/fi";
 
@@ -13,8 +13,8 @@ export default function Profile() {
         <Link className="button" to="/pedidos/new">
           Novo pedido
         </Link>
-        <button type="button">
-          <FiPower size={18} color="yellowgreen" />
+        <button type="button" className="button">
+          <FiPower size={18} color="#66fcf1" />
         </button>
       </header>
       <h1>Pedidos Cadastrados</h1>
@@ -22,45 +22,12 @@ export default function Profile() {
         <li>
           <strong>Pedido:</strong>
           <p>Criação de Site</p>
-          <strong>Valor:</strong>
-          <p>Não definido</p>
           <strong>Descrição:</strong>
           <p>Descrição teste</p>
-          <button>
-            <FiTrash2 size={20} />
-          </button>
-        </li>
-        <li>
-          <strong>Pedido:</strong>
-          <p>Criação de Site</p>
           <strong>Valor:</strong>
           <p>Não definido</p>
-          <strong>Descrição:</strong>
-          <p>Descrição teste</p>
           <button>
-            <FiTrash2 size={20} />
-          </button>
-        </li>
-        <li>
-          <strong>Pedido:</strong>
-          <p>Criação de Site</p>
-          <strong>Valor:</strong>
-          <p>Não definido</p>
-          <strong>Descrição:</strong>
-          <p>Descrição teste</p>
-          <button>
-            <FiTrash2 size={20} />
-          </button>
-        </li>
-        <li>
-          <strong>Pedido:</strong>
-          <p>Criação de Site</p>
-          <strong>Valor:</strong>
-          <p>Não definido</p>
-          <strong>Descrição:</strong>
-          <p>Descrição teste</p>
-          <button>
-            <FiTrash2 size={20} />
+            <FiTrash2 size={20} color="#66fcf1" />
           </button>
         </li>
       </ul>
